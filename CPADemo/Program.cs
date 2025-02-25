@@ -2,6 +2,6 @@
 using CPADemo.Db;
 using EntityFrameworkCore.Mysql.CPA;
 
-SysDbContext sysDbContext = new SysDbContext();
+await using SysDbContext sysDbContext = new SysDbContext();
 await sysDbContext.RefreshTableAsync();
 Console.WriteLine();
