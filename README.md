@@ -14,14 +14,14 @@ EntityFrameworkCore Mysql 表结构自动更新扩展，用于在应用启动时
 
 ## 安装
 
-``bash
+```bash
 dotnet add package EntityFrameworkCore.Mysql.CPA
-``
+```
 
 ## 使用方法
 
 1. 在你的 `Program.cs` 中，在构建应用后调用扩展方法：
-``csharp
+```csharp
 var app = builder.Build();
 // 异步方式
 await app.Services.RefreshTableAsync(
@@ -34,13 +34,13 @@ typeof(YourDbContext),
 typeof(AnotherDbContext)
 );
 app.Run();
-``
+```
 
 2. 也可以单独对某个 DbContext 实例进行更新：
-``csharp
+```csharp
 using var context = new YourDbContext();
 await context.RefreshTableAsync();
-``
+```
 
 ## 注意事项
 
