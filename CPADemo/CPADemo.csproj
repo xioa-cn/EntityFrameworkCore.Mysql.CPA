@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EntityFrameworkCore.Mysql.CPA\EntityFrameworkCore.Mysql.CPA.csproj" />
+    <PackageReference Include="EntityFrameworkCore.Mysql.CPA" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

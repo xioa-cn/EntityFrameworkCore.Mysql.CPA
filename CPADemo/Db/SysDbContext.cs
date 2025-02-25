@@ -16,6 +16,10 @@ namespace CPADemo.Db
         [MaxLength(1000)]
         [Column("Con")]
         public string? Context { get; set; }
+        
+        [Required]
+        [MaxLength(10)]
+        public string Temp { get; set; }
     }
 
     public class SysDbContext : DbContext
